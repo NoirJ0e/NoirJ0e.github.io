@@ -1,0 +1,596 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.jpg">
+  <link rel="icon" type="image/png" href="/img/icon.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Noir Joe">
+  <meta name="keywords" content="">
+  <title>腾讯/网易云游戏简单体验 - 一人游</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_pf9vaxs7x7b.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>一人遊</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/Sunrise.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-11-01 19:49" pubdate>
+        November 1, 2020 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">腾讯/网易云游戏简单体验</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h3 id="给太长不看的人的版本"><a href="#给太长不看的人的版本" class="headerlink" title="给太长不看的人的版本"></a>给太长不看的人的版本</h3><ol>
+<li>在佛山地区的延迟体验还可以, 可能和云游戏提供商都设有华南地区机器有关系</li>
+<li>腾讯的游戏数量很少, 但是体验还算不错</li>
+<li>网易的游戏数量很多, 但是机器性能一般, 尤其是储存性能,响应非常慢</li>
+<li>非常,非常,非常吃网络, 如果网络容易波动或网络条件不佳, 建议不要在这方面投入太多金钱</li>
+</ol>
+<h2 id="这次的云游戏-和以往有什么不同"><a href="#这次的云游戏-和以往有什么不同" class="headerlink" title="这次的云游戏, 和以往有什么不同?"></a>这次的云游戏, 和以往有什么不同?</h2><p>云游戏这个名号仿佛是赶上了最近超高速发展的5G的东风, 风光的不得了, 但其实这已经不是第一次 <strong>云游戏</strong> 第一次亮相了, 在我的记忆中, 起码在2015年的时候就已经有相关的概念了, 我家当时送的广东电信IPTV盒子上面就有游戏功能, 只不过体验起来实在是太差劲了, 无外乎是 <strong>延迟高 画质差 游戏少</strong> 这三个问题, 可能还有未探索出合理的收费模式的理由, 总的来说像是草草收尾了.</p>
+<p><strong>那现在和以前, 有什么不同?</strong></p>
+<p>网络和硬件性能的巨大进步带来了超强的性能和超低的延迟, 以往困扰的延迟和画质问题, 基本得到了解决, 而随着近几年优秀游戏不断为大众所熟知, 不少人因为自己孱弱的电脑性能或者平台限制(比如说Mac用户), 无法体验到这些佳作, 云游戏, 似乎能够为这些用户提供不错的解决方案.</p>
+<h2 id="现有的两个方案体验"><a href="#现有的两个方案体验" class="headerlink" title="现有的两个方案体验"></a>现有的两个方案体验</h2><p>对于在国内的我们来说, 我们就别想体验诸如 Google Stadia, GeForce Now等方案了, 延迟和速度或许还不如五年前的国内云游戏呢. 那现在在国内最友好的方案无非就是 – <strong>网易云游戏</strong> 和 <strong>腾讯云游戏</strong> 二选一了. </p>
+<h3 id="腾讯云游戏-什么都挺好-可惜数量不足"><a href="#腾讯云游戏-什么都挺好-可惜数量不足" class="headerlink" title="腾讯云游戏: 什么都挺好, 可惜数量不足"></a>腾讯云游戏: 什么都挺好, 可惜数量不足</h3><p>腾讯在国内可以算是最广为人知的厂商了吧, 国内现在应该基本上不存在完全不使用腾讯产品的人吧, 腾讯在用户量方面存在绝对的优势, 这一点毋庸置疑. </p>
+<p><img src="https://i.loli.net/2020/11/02/Os9GTDRMpU3LWAx.png" srcset="/img/loading.gif" alt="image-20201102151135619"></p>
+<p>从腾讯云游戏的官网不难看出, 目前阶段的重点在Mac端, 个人认为还是很合理的, 毕竟macOS…它游戏数量真不多, MacBook系列的性能释放也不行, iMac系列和Mac Pro系列….太贵了而且一样不适合用来打游戏. 这一块的市场需求还是挺大的</p>
+<p><strong>但是</strong>, 腾讯的致命伤就在于, 它目前提供的游戏库实在是太少了…</p>
+<p><img src="https://i.loli.net/2020/11/02/dtpiVOyQakKvcFj.png" srcset="/img/loading.gif" alt="image-20201102151701182"></p>
+<p><img src="https://i.loli.net/2020/11/02/S9UzyIkKbYVJqhu.png" srcset="/img/loading.gif" alt="image-20201102151715772"></p>
+<p>这就是现阶段腾讯提供的所有游戏了, 这样的规模, 对于一个云游戏来说, 实在是太少了. 不过它很好的解决了国服英雄联盟没有Mac客户端的问题 – 而这个问题刚好是我舍友的一个痛点, 他表示非常开心.</p>
+<p>抛开游戏库这个问题, 腾讯云游戏的体验还是相当不错的, 延迟低, 机器性能也还行(也可能是我测试的游戏不需要非常高的性能, 我只测试了 <strong>英雄联盟</strong>, 且只打了一局人机 ), 听群友说极品飞车OL的体验也不错, 我本人没有做尝试.</p>
+<h3 id="网易云游戏-意外的惊喜"><a href="#网易云游戏-意外的惊喜" class="headerlink" title="网易云游戏: 意外的惊喜"></a>网易云游戏: 意外的惊喜</h3><p>网易和腾讯相比, 给我的第一个惊喜就是不需要额外下载客户端, 这一点非常不错, 值得称赞👍🏻</p>
+<p>而我在被腾讯的游戏库震撼过之后, 看到网易的游戏库可以说是非常的舒适了, 虽然在界面提供的游戏也不是很多, 但和现阶段的腾讯相比, 属于一个天上一个地上的级别. </p>
+<p><img src="https://i.loli.net/2020/11/02/uDHFZWIzsL5PpUS.jpg" srcset="/img/loading.gif" alt="telegram-cloud-photo-size-5-6125324131416255405-y"></p>
+<p>而且还额外提供云电脑, 可以自行安装自己想要的其他游戏, 在登录之后里面自带有Steam,Epic,Uplay,Origin和战网的客户端, 还自带一个UU加速器网吧版, 这个就不需要再额外开通UU加速器会员了, 还是不错的.</p>
+<p><img src="https://i.loli.net/2020/10/31/4en6s7mpKlqwXSL.jpg" srcset="/img/loading.gif" alt="telegram-cloud-photo-size-5-6120441565349521910-y"></p>
+<p>在我本人的地理位置下(座标佛山), 网易和腾讯的延迟体验几乎是一致的, 而根据我一位香港的朋友的测试结果, 他的体验也是十分的良好, 没有感觉到任何延迟的影响, 一切操作顺畅的仿佛是在本地的机器上使用. </p>
+<p>当然, 在云电脑上玩其他游戏, 必不可少的游戏下载部分可不能占用太长时间, 在这一点上网易给的还是很足的(图为晚上9点左右), 不过后续的速度有所下降, 大约降到了200M宽带的水平, 还算是令人满意</p>
+<p><img src="https://i.loli.net/2020/11/01/5a1cSOBqw7oKkMN.jpg" srcset="/img/loading.gif" alt="telegram-cloud-photo-size-5-6120441565349521919-y"></p>
+<p>不过后续的启动器内更新就还是DE的老样子: <strong>拉跨</strong>, 哪怕使用了云电脑自带的UU加速器网吧版进行加速也依然是反复横跳的速度, 以至于我完全没成功玩上Warframe….</p>
+<p>不过我后续还体验了一下巫师三, 在誊写本文的时候, 网易云游戏已经提供了巫师三秒玩的选项, 游玩的体验… 拉跨, CPU掉帧严重, 如果只是尝鲜的话可以, 但是真的打算在云电脑上通关巫师3, 我个人是强烈不推荐的.</p>
+<h4 id="流量消耗"><a href="#流量消耗" class="headerlink" title="流量消耗"></a>流量消耗</h4><p>这边仅有网易的数据, 因为腾讯的体验是在普通家庭宽带里进行的, 没有流量限制所以根本没有注意流量消耗</p>
+<p>而网易这边, 在我和舍友同时进行一局30分钟的英雄联盟后(我是云电脑,他不是)后, 流量统计 <strong>大约使用了1G</strong> , 结合我在正式进行游戏之前使用云电脑下载了半个小时客户端(全程串流), 我觉得这个流量消耗属于可以接受的范围内, 毕竟看一个小时的流媒体..也差不多是这个流量</p>
+<h3 id="难道这两个云游戏就没有缺点了吗"><a href="#难道这两个云游戏就没有缺点了吗" class="headerlink" title="难道这两个云游戏就没有缺点了吗?"></a>难道这两个云游戏就没有缺点了吗?</h3><p>当然有, 这两个云游戏都有一个共同的缺点, 不过这个问题和云游戏本身应该是没有太大的关系的, 还是出现在这个形式的游戏上, 对于网络的要求实在是太高了</p>
+<p>网络只要一有波动, 游戏的画面就会出现卡顿, 这在一般的单机游戏还好, 在竞技类游戏当中是不可接受的, 而如果你的网络情况 <strong>不太理想</strong> 的话… 整个游戏体验依然不尽人意</p>
+<h4 id="针对网易云游戏的缺点"><a href="#针对网易云游戏的缺点" class="headerlink" title="针对网易云游戏的缺点"></a>针对网易云游戏的缺点</h4><ul>
+<li><p>串流的画质一般, 尤其是颜色非常的…暗淡 或者说是对比度有问题</p>
+<p><img src="https://i.loli.net/2020/11/03/72pqghsUjSrHt8W.jpg" srcset="/img/loading.gif" alt="telegram-cloud-photo-size-5-6125002863567546969-y">(上图为网易串流的时候的画面)</p>
+<p><img src="https://i.loli.net/2020/11/03/h32SWimyUjEt6Pr.jpg" srcset="/img/loading.gif" alt="telegram-cloud-photo-size-5-6125324131416255435-y">(此为正常游戏画面, 差距非常明显)</p>
+</li>
+<li><p>硬盘速度较慢, 在云电脑开机和游戏读取上, 习惯了SSD的各位用户可能会感到不适</p>
+</li>
+</ul>
+<blockquote>
+<p>这个云电脑开机是真的很慢, 而且开机后的响应速度也是奇慢无比, 真正的梦回HDD时代</p>
+<p>但是如果不开启云电脑, 运行网易直接提供的游戏, 读取速度到还是可以接受</p>
+</blockquote>
+<ul>
+<li>机器性能较弱, 但是如果只是用来尝鲜的话影响不大</li>
+</ul>
+<p>这是云电脑的配置, 内存还是给的很足的, 处理器给的是50%的性能, 但是这有个问题</p>
+<p><img src="https://i.loli.net/2020/11/01/P18DAiQ7n6clvkI.png" srcset="/img/loading.gif" alt="image-20201101002302837"></p>
+<p><img src="https://i.loli.net/2020/11/03/GdAJ8FWxSK9rjXn.png" srcset="/img/loading.gif" alt="image-20201103113017893"></p>
+<p>这是这颗处理器的性能, 多核很强, 但是单核性能在跑分上只有1666分, 比我笔记本上的 i5 8257U 的单核性能还差(8257U的跑分是2323)</p>
+<p>不过这中等偏下的单核性能, 在极其需要单核性能的游戏这一领域的发挥实在是一般….跑的起来那肯定是跑的起来, 但是实际上的游戏帧数波动还是很明显</p>
+<ul>
+<li>如果在macOS上使用 <strong>⌘+v</strong> 进行复制的话, 会在所有复制结果前面多一个 v, 需要手动删除</li>
+</ul>
+<h4 id="针对腾讯云游戏的缺点"><a href="#针对腾讯云游戏的缺点" class="headerlink" title="针对腾讯云游戏的缺点"></a>针对腾讯云游戏的缺点</h4><ol>
+<li>游戏数量太少</li>
+<li>可能部分游戏需要在启动后手动登录WeGame</li>
+<li>需要单独下载客户端</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>现阶段的云游戏, 和以前相比实在是好了太多, 我也已经在网易平台上玩了两天原神, 总的体验还是相当不错, 网易的收费价格, 我觉得如果不是重度游戏玩家的话, 还是可以接受的. 但是一旦网络有所波动, 体验就会急剧下降, 如果网络环境不好, 体验也不会好</p>
+<p>但这似乎就进入了一个奇怪的区间: 网络环境不怎么好的人(比如说多人公用一个AP的学生), 在这方面得到的体验其实是一般的, 但是对于游戏需求最为迫切的, 不就是这样的学生吗…….</p>
+<p>不过往好的方面想, 现阶段提供的质量, 已经是令人满意的了, 当科技继续发展, 距离完美体验云游戏的那一天, 应该也不用太长时间了吧.</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%90%90%E6%A7%BD/">吐槽</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/12/29/%E5%8F%8C%E9%A3%8E%E5%88%B0%E5%BA%95%E5%BC%BA%E5%9C%A8%E5%93%AA%E9%87%8C/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">群怪杀手:双风到底强在那里?</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/09/08/AdGuard-%E4%B8%80%E5%80%8B%E8%B6%85%E4%B9%8E%E6%88%91%E6%83%B3%E8%B1%A1%E7%9A%84%E5%B7%A5%E5%85%B7/">
+                        <span class="hidden-mobile">AdGuard:一個超乎我想象的工具</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "腾讯/网易云游戏简单体验&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+  
+  
+    <script>
+      !function (e, t, a) {
+        function r() {
+          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+          requestAnimationFrame(r)
+        }
+
+        function n() {
+          var t = "function" == typeof e.onclick && e.onclick;
+          e.onclick = function (e) {
+            t && t(), o(e)
+          }
+        }
+
+        function o(e) {
+          var a = t.createElement("div");
+          a.className = "heart", s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+          }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+          var a = t.createElement("style");
+          a.type = "text/css";
+          try {
+            a.appendChild(t.createTextNode(e))
+          } catch (t) {
+            a.styleSheet.cssText = e
+          }
+          t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+          setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+      }(window, document);
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

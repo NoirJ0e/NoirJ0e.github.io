@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.jpg">
+  <link rel="icon" type="image/png" href="/img/icon.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Noir Joe">
+  <meta name="keywords" content="">
+  <title>AdGuard:一個超乎我想象的工具 - 一人游</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_pf9vaxs7x7b.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>一人遊</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/Sunrise.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-09-08 09:04" pubdate>
+        September 8, 2020 am
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">AdGuard:一個超乎我想象的工具</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>大概三年前就已经听过AdGuard的大名了, 但是因为一些原因,一直沒有使用(沒买),当时我的想法是,自己在自己在手机上安装的软件并不多, 且來源基本都是 Play商店,不需要花太多心思在去广告上面. 同时,在桌面端的浏览器上面, 我的选择是 <a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a>, 选择他的主要原因是……. 它能把YouTube的广告給去掉,非常厉害</p>
+<p>各种机缘巧合 <del>无厘头花钱</del>  之后, 我拥有了 YouTube Premium, 去YouTube广告已经不再是剛需了, 同時我对去廣告插件的看法也从原本的 <strong>只要能去广告就行</strong> 变成了 <strong>在过滤跟踪器这方面上做的有多好</strong> . 基于这个需求, AdGuard又一次进入了我的视野.</p>
+<h2 id="AdGuard-Home-初次尝试"><a href="#AdGuard-Home-初次尝试" class="headerlink" title="AdGuard Home 初次尝试"></a>AdGuard Home 初次尝试</h2><p>我本人并不是一个, 看到这个工具好像有用就会立刻付钱购买的. 在AdGuard这件事情上面, 我一开始找到的版本是 AdGuard Home, 一个可以部署在非常多平台的基于DNS的开源去广告程序 <img src="https://pan.noirjoe.xyz/Downloads/blog-pics/AdGuard1.png" srcset="/img/loading.gif"></p>
+<blockquote>
+<p>这个程序我一开始的部署平台是我的笔记本, 但是老实讲我其实没有感觉到什么特有的去广告效果,放在笔记本上只是单纯的想把DNS解析服务器放在本地而不是扔给学校那个不知道什么时候会出问题的机房</p>
+</blockquote>
+<p>今年(2020年)早些时候我购入了一个N1盒子来做家里的旁路由, 那有一个单独,24H在线的Linux设备在家里, 不让他多干点什么实在是对不起自己花的钱对吧, 我便开始折腾如何让AdGuard Home来充当dnsmasq的上游,然后用来处理openclash的网络请求了, 不过由于是旁路由, 每一台设备都要单独设置, 所以真正享受到这个服务的其实只有…</p>
+<ol>
+<li>客厅的小米电视</li>
+<li>我妈的手机</li>
+<li>我爸的手机</li>
+<li>我自己的的全部设备</li>
+</ol>
+<p>具体效果如何嘛…我是不知道我爸妈那边的状况, 不过小米电视的开机广告确实是没有了, 这点挺不错的, 但是网页流量这一点, 光靠DNS就能解决的话我想也不会有那么多去广告的插件了,对把🌚</p>
+<p>虽然网页广告拦截用AdGuard Home的效果并不显著, 但是他对于跟踪器的拦截还是相当不错的, 如果不是它我都不知道微软会发那么多跟踪器给我,实在是受宠若惊啊(才怪)</p>
+<h2 id="AdGuard-for-macOS-一个能用-但是不一定那么便利的选择"><a href="#AdGuard-for-macOS-一个能用-但是不一定那么便利的选择" class="headerlink" title="AdGuard for macOS 一个能用,但是不一定那么便利的选择"></a>AdGuard for macOS 一个能用,但是不一定那么便利的选择</h2><p>真正开始用AdGuard应用程序是开始于 2020.7.20 的下午, 那天刚好有点钱,又碰上荔枝数码打折, 不到50块钱买了三授权一年的订阅,开始使用正统AdGuard了(Home…不太像是老本行)</p>
+<p><img src="https://pan.noirjoe.xyz/Downloads/blog-pics/AdGuard-2.png" srcset="/img/loading.gif">这是在笔记上的截图<br><img src="https://pan.noirjoe.xyz/Downloads/blog-pics/AdGuard3.png" srcset="/img/loading.gif"><br>在桌面端上的体验如何呢? 这个问题我个人的回答是:</p>
+<p><strong>有效果, 但是不如uBlock Origin 这种来的快捷. 不过, 自定义拦截网页元素这个功能是真的非常好用</strong></p>
+<p>以我现在现在经常访问的一个网站 <a target="_blank" rel="noopener" href="https://papacambridge.com/home/index.html">PapaCambridge</a> 来举例子, 其实ublock Origin和AdGuard都能够比较好的过滤掉这上面的广告, 在便利程度上甚至ublock Origin还更高一筹,只要激活这个插件, 绝大多数广告就已经消失不见了, 相比之下AdGuard的效果还弱一点(当然这和我激活的过滤器不多肯定有关系), 但是对于某些占位元素, ublock的手动添加拦截功能有时候会有识别不那么精确的情况(比如说一下子一大片全没了), AdGuard的粒度要细的多, 在精确确定是哪一个元素要被拦截掉的时候, 个人感受AdGuard在这方面的体验比ublock好的多, 但是就从易用性上来讲, AdGuard确实是不如ublock的, 何况ublock还能把YouTube广告去掉而AdGuard不行🌚</p>
+<blockquote>
+<p>插一嘴, Mac上的AdGuard好像不用担心和多个代理共存的问题, 我目前的环境是 Surge + AdGuard, 没有出现过AdGuard失效的情况, 哪怕是打开 Surge enhanced mode 也不会</p>
+</blockquote>
+<h2 id="AdGuard-for-Android"><a href="#AdGuard-for-Android" class="headerlink" title="AdGuard for Android"></a>AdGuard for Android</h2><p>这个实际上才是最惊艳到我的地方, 如果不是它给出的统计数据, 我都不知道我自己的手机上会有这么多流量用在了跟踪器和广告上面(从7.22号到9.6一共过滤了11G流量)<br>用上它之后是真的能很直观的感觉到广告少了很多, 尤其是移动端Chrome的搜索广告真的少了很多,非常明显, 同时 Udictionary(有道词典国际版) 的应用内广告是真的消失了, 体验非常良好(但是有时候启动的开屏广告还是会有, 后面我找到了这个请求的链接并加入了规则之后就解决了)</p>
+<blockquote>
+<p>对了AdGuard for Android也是可以和其他代理共存的, 只要不占用vpnservice就行, 当然如果占用的话也可以使用HTTP代理的方式, 但是效果并不好, 会留下占位文本, 体验很烂, 所以还是还是推荐设置前置代理比较好, 性能的开销并不是很大, 发热也还好, 还是非常推荐各位使用的</p>
+</blockquote>
+<h2 id="反思-On-the-internet-nobody-knows-you’re-a-dog"><a href="#反思-On-the-internet-nobody-knows-you’re-a-dog" class="headerlink" title="反思:On the internet, nobody knows you’re a dog?"></a>反思:On the internet, nobody knows you’re a dog?</h2><blockquote>
+<p>这是最好的时代,似乎一切需要的信息都可以在网络上找到<br>这是最坏的时代,似乎每一个点开的链接都想把你的秘密揭开</p>
+</blockquote>
+<p>当代互联网, 公司们可能不仅仅知道你是一条狗, 可能还知道你的毛色,种类,喜欢的食物的类型,喜欢的运动类型,你的家庭住址,你的活动轨迹等等等等. 互联网的匿名特性, 在当今社会真的还存在吗?</p>
+<p>我想,如果个人用户什么都不做, 答案恐怕是否定的吧</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/11/01/%E4%BA%91%E6%B8%B8%E6%88%8F%E4%BD%93%E9%AA%8C/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">腾讯/网易云游戏简单体验</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/16/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "AdGuard:一個超乎我想象的工具&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+  
+  
+    <script>
+      !function (e, t, a) {
+        function r() {
+          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+          requestAnimationFrame(r)
+        }
+
+        function n() {
+          var t = "function" == typeof e.onclick && e.onclick;
+          e.onclick = function (e) {
+            t && t(), o(e)
+          }
+        }
+
+        function o(e) {
+          var a = t.createElement("div");
+          a.className = "heart", s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+          }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+          var a = t.createElement("style");
+          a.type = "text/css";
+          try {
+            a.appendChild(t.createTextNode(e))
+          } catch (t) {
+            a.styleSheet.cssText = e
+          }
+          t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+          setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+      }(window, document);
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
