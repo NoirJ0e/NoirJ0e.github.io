@@ -95,6 +95,5 @@ img.selfie {
   border: 8px solid var(--Gray-Dark-Default, #030712);
   position: relative;
   box-shadow: 1.25rem 1.44rem #374151;
-  margin-left: 6rem;
-  margin-top: 3rem;
+  margin: auto;
 }
