@@ -1,3 +1,6 @@
+html {
+  background: var(--Gray-Dark-Default, #030712);
+}
 a:visited {
   /* Not change color after clicked */
   color: inherit;
@@ -109,6 +112,9 @@ img.selfie {
 }
 
 .skill .container .text h2 {
+  margin: auto auto;
+  max-width: 20%;
+  min-width: 10%;
   display: flex;
   padding: 0.25rem 1.25rem;
   justify-content: center;
@@ -173,4 +179,80 @@ img.skill-icon {
   font-style: normal;
   font-weight: 400;
   line-height: 1.75rem; /* 155.556% */
+}
+
+.contact {
+  background: var(--Gray-Dark-Default, #030712);
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+  max-width: 48rem;
+  flex-direction: column;
+  margin: auto auto;
+}
+
+.contact h2 {
+  margin: auto auto;
+  display: flex;
+  padding: 0.25rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  background: var(--Gray-Dark-200, #374151);
+  color: var(--Gray-Dark-600, #d1d5db);
+  max-width: 20%;
+  min-width: 10%;
+
+  /* Body3/Medium - All */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+img.contact-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  align-self: center;
+}
+
+.contact .container h3 {
+  color: var(--Gray-Dark-900, #f9fafb);
+  text-align: center;
+
+  /* Heading/H2/Semi Bold - Desktop */
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem; /* 111.111% */
+  letter-spacing: -0.045rem;
+}
+
+.contact-text {
+  display: flex;
+  gap: 1.25rem;
+  margin: auto auto;
+}
+
+.contact a:link {
+  text-decoration: none;
+  color: var(--Gray-Dark-600, #d1d5db);
+}
+
+footer {
+  color: var(--Gray-Dark-600, #d1d5db);
+  display: flex;
+  padding: 1.5rem 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  background: var(--Gray-Dark-Default, #030712);
 }
